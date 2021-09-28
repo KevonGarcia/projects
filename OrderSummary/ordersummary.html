@@ -11,26 +11,81 @@
   <style>
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
+    
+    body {
+  background: url('images/pattern-background-desktop.svg') no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+  background-color: #E0E8FF;
+}
+.card {
+    display: grid;
+    height: 700px;
+    max-width: 450px;
+    margin: 80px auto;
+    border-radius: 20px;
+    overflow: hidden;
+    background-color: white;
+}
+.card-text{
+    text-align: center;
+    padding: 0 70px;
+    height: 100px;
+}
+.music-details {
+    background-color: hsl(225, 100%, 98%);
+    padding: 0 25px;
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    align-items: center;
+    gap: 1em;
+    margin: 0 40px;
+    border-radius: 15px;
+    overflow: hidden;
+}
+.payment {
+    background-color: hsl(245, 75%, 52%);
+    display: grid;
+    align-items: center;
+    text-align: center;
+    margin: auto 40px;
+    height: 50px;
+    border-radius: 10px;
+    overflow: hidden;
+    color: white;
+    text-decoration: none;
+    box-shadow: 2px 3px 15px hsl(224deg 23% 55%);
+}
+a {
+    font-weight: 700;
+}
   </style>
 </head>
 <body>
 <div class="container-fluid">
-  <div class="card" style="width: 18rem;">
+  <div class="card">
     <img src="images/illustration-hero.svg" class="card-img-top" alt="Hero Image">
     <div class="card-body">
-    <h1 class="card-title text-center">Order Summary</h1>
+    <h1 class="card-title">Order Summary</h1>
+    <p class="card-text">You can now listen to millions of songs, audiobooks, and podcasts on any device anywhere you like!</p>
 
-  <p class="card-text">You can now listen to millions of songs, audiobooks, and podcasts on any device anywhere you like!</p>
-
-
-  Annual Plan
-  $59.99/year
-
-  Change
-  <a href="#" class="btn btn-primary">Proceed to Payment</a>
-</div>d
+  <div class="music-details">
+    <div>
+      <img src="images/icon-music.svg" alt="music">
+    </div>
+    <div class="music-detail-text">
+      <h3>Annual Plan</h3>
+      <p>$59.99/year</p>
+    </div>
+    <a href="#">Change</a>
+</div>
+  <a class="payment">Proceed to Payment</a>
+  <a class="cancel">Cancel Order</a>
+</div>
   </div>
-  Cancel Order
+
 </div>
 
   <div class="attribution">
